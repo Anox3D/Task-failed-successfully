@@ -1,6 +1,8 @@
-# include <windows.h>
+#include <windows.h>
 
 int main()
 {
-	MessageBox(0, "Task failed successfully.", "Windows XP", MB_OK);
+	ShowWindow(GetConsoleWindow(), SW_HIDE);
+	
+	MessageBox(0, "Task failed successfully.", "Windows XP", MB_ICONINFORMATION);
 }
